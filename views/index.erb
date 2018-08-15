@@ -7,12 +7,18 @@
     </style>
   </head>
   <body>
+  	<p>
+  		Please, guess a number between 0 and 99 (inclusive).
+  	</p>
   	<form>
 	  <input type='text' name='guess' />
 	  <input type='submit' value='Guess!'/>
 	</form>
 	<p>
       <%= message %>
+    </p>
+    <p>
+    	Remaining guesses: <%= guesses%>
     </p>
     <p>
     	<%= clue %>
